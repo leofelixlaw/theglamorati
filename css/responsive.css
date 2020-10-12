@@ -1,0 +1,177 @@
+/*
+    Theme Responsive Design
+*/
+
+@media (max-width: 1170px) {
+    .swiper-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 45px;
+    }
+    .hero-section {
+        height: 650px;
+    }
+    .hero_content {
+        padding: 100px 0;
+    }
+}
+
+/* ---- Start of max-width 992px CSS ---- */
+
+@media (max-width: 992px) {
+    .sm-padding {
+        padding: 15px;
+    }
+    ul.nav>li>a {
+        padding: 0 5px;
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .menu-wrap ul.nav {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+    }
+    .hero-moc {
+        display: none;
+    }
+    .hero-section {
+        height: 450px;
+    }
+    .swiper-container {
+        width: 260px;
+    }
+    .swiper-container .swiper-slide {
+        text-align: center;
+    }
+    .swiper-container .swiper-slide img,
+    .swiper-container .swiper-slide-active img {
+        width: 80% !important;
+    }
+    .download-section:before,
+    .swiper-container .swiper-next,
+    .swiper-container .swiper-prev {
+        /* display: none; */
+    }
+    .download-section {
+        padding: 100px 0;
+    }
+}
+
+/* ---- End of max-width 992px CSS ---- */
+
+/* ---- Start of min-width 480px and max-width 768px CSS ---- */
+
+@media all and (min-width: 480px) and (max-width: 768px) {}
+
+/* ---- End of min-width 480px and max-width 768px CSS ---- */
+
+/* ---- Start of max-width 767px CSS ---- */
+
+@media all and (max-width: 767px) {
+    body {
+        overflow-x: visible;
+    }
+    body,
+    p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .padding {
+        padding: 60px 0;
+    }
+    .xs-padding {
+        padding: 15px;
+    }
+    .navbar-brand {
+        padding: 11px 0;
+    }
+    .about-mockup {
+        display: none;
+    }
+    .hero-section {
+        height: 400px;
+        padding-top: 45px;
+    }
+    .feature-left .feature-box h4 {
+        margin: 0 0 15px 60px;
+        text-align: left;
+    }
+    .feature-left .feature-box .feature-content {
+        padding: 25px 20px 25px 50px;
+        border-right: 2px solid #eee;
+        border-left: 0px solid transparent;
+        text-align: left;
+    }
+    .feature-left .feature-box:hover .feature-content {
+        border-right-color: #005bea;
+        border-left-color: transparent;
+    }
+    .feature-left .feature-box .feature-content:before {
+        right: 0;
+        left: auto;
+    }
+    .feature-left .feature-box .feature-icon {
+        left: 0;
+        right: auto;
+    }
+    .feature-list.text-right {
+        text-align: left;
+    }
+}
+
+/* ---- End of max-width 767px CSS ---- */
+
+/* ---- Start of max-width 576px CSS ---- */
+
+@media all and (max-width: 576px) {
+    h3,
+    h4 {
+        font-size: 13px;
+    }
+    .subscribe-form {
+        width: 100%;
+    }
+    .subscribe-form .form-input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .subscribe-form .submit {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* ---- End of max-width 576px CSS ---- */
+
+/* ---- Start of max-width 420px CSS ---- */
+
+@media all and (max-width: 420px) {
+    .btn-group a {
+        font-size: 16px;
+    }
+}
+
+/* ---- End of max-width 420px CSS ---- */
+
+/* ---- Start of max-width 380px CSS ---- */
+
+@media all and (max-width: 380px) {}
+
+/* ---- End of max-width 380px CSS ---- */
