@@ -81,7 +81,7 @@
     }
     body,
     p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 22px;
     }
     h1 {
@@ -94,7 +94,7 @@
         font-size: 16px;
     }
     .padding {
-        padding: 60px 0;
+        padding: 30px 0;
     }
     .xs-padding {
         padding: 15px;
@@ -115,12 +115,12 @@
     }
     .feature-left .feature-box .feature-content {
         padding: 25px 20px 25px 50px;
-        border-right: 2px solid #eee;
+        border-right: 1px solid #eee;
         border-left: 0px solid transparent;
         text-align: left;
     }
     .feature-left .feature-box:hover .feature-content {
-        border-right-color: #005bea;
+        border-right-color: #F9BBAC;
         border-left-color: transparent;
     }
     .feature-left .feature-box .feature-content:before {
