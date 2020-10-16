@@ -45,7 +45,7 @@
         loop: true,
         autoplay: true,
         centeredSlides: true,
-        speed: 400,
+        speed: 800,
         spaceBetween: 300,
         navigation: {
             nextEl: '.swiper-next',
