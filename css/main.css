@@ -34,12 +34,10 @@ h1 {
 	line-height: 1.1;
 	margin: 0 0 10px;
 	color: #fff;
-	letter-spacing: -.04em;
 }
 
 h2 {
 	margin: 0 0 10px;
-	letter-spacing: -.06em;
 	font-size: 48px;
 	line-height: 58px;
 	font-weight: normal;
@@ -52,7 +50,6 @@ h4 {
 	line-height: 1.2;
 	color: #fff;
 	text-transform: uppercase;
-	letter-spacing: -.03em;
 }
 
 h3 {
@@ -87,7 +84,7 @@ a,
 span {}
 
 p {
-	font-size: 21px;
+	font-size: 16px;
 	margin-bottom: 15px;
 	font-family: helveticaneue-thin;
 }
@@ -301,7 +298,8 @@ body.loaded #preloader {
 }
 
 .hero_btn:hover {
-	background-color: #F9BBAC;
+	background: rgb(236,182,169);
+	background: linear-gradient(180deg, rgba(236,182,169,1) 0%, rgba(193,139,123,1) 100%);
 	border: 1px solid #F9BBAC;
 	color: #fff;
 	box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .15)
@@ -406,7 +404,6 @@ button {
 .navbar-header .brand {
 	font-size: 25px;
 	color: #333;
-	letter-spacing: -1px;
 	font-weight: 600;
 	margin-left: 13px
 }
@@ -444,8 +441,6 @@ ul.nav>li>a {
 	display: inline-block;
 	vertical-align: middle;
 	padding: 0 10px;
-	letter-spacing: 1px;
-	/* font-weight: 600; */
 	text-transform: uppercase;
 	line-height: 70px;
 	z-index: 1;
@@ -525,7 +520,7 @@ ul.nav>li>a.active {
 
 .hero-section {
 	position: relative;
-	height: 750px;
+	height: 700px;
 	z-index: 1;
 }
 
@@ -545,11 +540,14 @@ ul.nav>li>a.active {
 	z-index: -1;
 }
 
-.hero-content h1 {}
+.hero-content h1 {
+    line-height: 65px;
+}
 
 .hero-content p {
 	color: #fff;
-	LINE-HEIGHT: 31px;
+	line-height: 40px;
+	font-size: 18px;
 }
 
 .hero-moc {
@@ -660,18 +658,21 @@ ul.nav>li>a.active {
 .about-content {}
 
 .feature-section {
-	background-color: #222222;
+	background-color: #000000;
 	border-bottom: 1px solid rgb(234 234 234 / 19%);
+	border-top: 1px solid rgb(234 234 234 / 19%);
 }
 
 .feature-box {}
 
 .feature-box h4 {
-	margin: 0 0 15px 60px
+	margin: 0 0 15px 60px;
+	font-weight: 500;
 }
 
 .feature-left .feature-box h4 {
-	margin: 0 60px 15px 0
+	margin: 0 60px 15px 0;
+	/* font-weight: 500; */
 }
 
 .feature-box .feature-content {
@@ -753,8 +754,8 @@ ul.nav>li>a.active {
 	right: 0
 }
 .feature-box .feature-icon svg{
-	height: 29px;
-	top: 4px;
+	height: 23px;
+	top: 3px;
 	position: relative;
 	fill: #fff;
 }
@@ -933,7 +934,6 @@ ul.nav>li>a.active {
 	width: 20px;
 	height: 20px;
 	line-height: 20px;
-	background-image: linear-gradient(to top, #F9BBAC 0%, #ffb199 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 20px;
@@ -946,6 +946,10 @@ ul.nav>li>a.active {
 	cursor: pointer;
 	transition: all .3s ease-in-out;
 	z-index: 99;
+}
+.swiper-container .swiper-next svg,
+.swiper-container .swiper-prev svg{
+	fill: white;
 }
 
 .swiper-container .swiper-next {
@@ -1022,6 +1026,21 @@ ul.nav>li>a.active {
 	-webkit-transition: all .2s ease;
 	-ms-transition: all .2s ease;
 	-o-transition: all .2s ease;
+}
+
+.play-button span svg{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 50%;
+	left: 50%;
+	margin-left: -12px;
+	z-index: 9;
+	color: #444;
+	margin-top: -12px;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 62px;
 }
 
 .play-button:hover span {
@@ -1466,7 +1485,7 @@ ul.nav>li>a.active {
 }
 
 .subscribe-section {
-	background: #333333;
+	background: #000000;
 	padding: 70px 0;
 	border-top: 1px solid rgb(234 234 234 / 19%);
 }
@@ -1506,17 +1525,18 @@ ul.nav>li>a.active {
 }
 
 .submit {
-	background-color: #F9BBAC;
+	background: rgb(236,182,169);
+	background: linear-gradient(180deg, rgba(236,182,169,1) 0%, rgba(193,139,123,1) 100%);
 	color: #fff;
 	font-size: 14px;
-	line-height: 50px;
+	line-height: 45px;
 	display: inline-block;
 	padding: 0 25px;
-	font-weight: 600;
+	font-weight: 500;
 	/* width: 28%; */
 	margin-left: 2%;
 	text-transform: uppercase;
-	border-radius: 25px;
+	border-radius: 5px;
 }
 
 .submit:hover {
@@ -1562,11 +1582,7 @@ ul.nav>li>a.active {
 }
 
 #scroll-to-top {
-	background: #F9BBAC;
-	background: -moz-linear-gradient(-45deg, #F9BBAC 0%, #dd9c8d 100%);
-	background: -webkit-linear-gradient(-45deg, #F9BBAC 0%, #dd9c8d 100%);
-	background: linear-gradient(135deg, #F9BBAC 0%, #dd9c8d 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9BBAC', endColorstr='#dd9c8d', GradientType=1);
+	background: #363636;
 	content: '';
 	display: none;
 	width: 45px;
@@ -1579,7 +1595,7 @@ ul.nav>li>a.active {
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
-	z-index: 999
+	z-index: 999;
 }
 
 #scroll-to-top:hover {
