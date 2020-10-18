@@ -40,10 +40,10 @@
         display: block;
     }
     .hero-moc {
-        display: none;
+        /* display: none; */
     }
     .hero-section {
-        height: 450px;
+        height: 550px;
     }
     .swiper-container {
         width: 260px;
@@ -106,7 +106,7 @@
         display: none;
     }
     .hero-section {
-        height: 400px;
+        /* height: 400px; */
         padding-top: 45px;
     }
     .feature-left .feature-box h4 {
@@ -115,7 +115,7 @@
     }
     .feature-left .feature-box .feature-content {
         padding: 25px 20px 25px 50px;
-        border-right: 1px solid #eee;
+        border-right: 1px solid rgb(238 238 238 / 45%);
         border-left: 0px solid transparent;
         text-align: left;
     }

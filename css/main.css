@@ -7,7 +7,7 @@
 
 body {
 	background-color: #000000;
-	font-family: Verdana,Geneva,sans-serif;
+	font-family: Verdana, Geneva, sans-serif;
 	font-size: 14px;
 	line-height: 23px;
 	color: rgb(255 255 255 / 46%);
@@ -242,6 +242,9 @@ button {
 .align-center {
 	text-align: center
 }
+hr {
+    border-top: 1px solid rgb(255 255 255 / 27%);
+}
 
 .fl-right {
 	float: right
@@ -298,8 +301,8 @@ body.loaded #preloader {
 }
 
 .hero_btn:hover {
-	background: rgb(236,182,169);
-	background: linear-gradient(180deg, rgba(236,182,169,1) 0%, rgba(193,139,123,1) 100%);
+	background: rgb(236, 182, 169);
+	background: linear-gradient(180deg, rgba(236, 182, 169, 1) 0%, rgba(193, 139, 123, 1) 100%);
 	border: 1px solid #F9BBAC;
 	color: #fff;
 	box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .15)
@@ -470,7 +473,7 @@ ul.nav>li>a.active {
 	width: 100%;
 	position: absolute;
 	right: 0;
-	top: 66px
+	top: 56px;
 }
 
 .slicknav_nav {
@@ -479,7 +482,7 @@ ul.nav>li>a.active {
 
 .slicknav_btn {
 	background-color: transparent;
-	margin: -46px 5px 19px
+	margin: -58px 5px 19px;
 }
 
 .slicknav_nav .slicknav_row:hover,
@@ -541,8 +544,9 @@ ul.nav>li>a.active {
 }
 
 .hero-content h1 {
-    line-height: 65px;
+	line-height: 65px;
 }
+
 
 .hero-content p {
 	color: #fff;
@@ -551,17 +555,20 @@ ul.nav>li>a.active {
 }
 
 .hero-moc {
-    position: relative;
+	position: relative;
+	margin: 20px 0;
 }
 
 .hero-moc img {}
-.video-content{
+
+.video-content {
 	position: absolute;
 	top: 40%;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
 }
+
 .promo_section {
 	background-color: #f7f7f7;
 	border-top: 1px solid #eaeaea;
@@ -727,10 +734,10 @@ ul.nav>li>a.active {
 
 
 @media (min-width: 768px) {
- .feature-box p {
-	font-size: 20px;
-	line-height: 30px;
-  }
+	.feature-box p {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }
 
 .feature-box .feature-icon {
@@ -753,19 +760,22 @@ ul.nav>li>a.active {
 	left: auto;
 	right: 0
 }
-.feature-box .feature-icon svg{
+
+.feature-box .feature-icon svg {
 	height: 23px;
 	top: 3px;
 	position: relative;
 	fill: #fff;
 }
+
 .feature-box:hover .feature-icon {
 	background-color: #F9BBAC;
 	border-color: #F9BBAC;
 	color: #222;
 	font-weight: bold;
 }
-.feature-box:hover .feature-icon svg{
+
+.feature-box:hover .feature-icon svg {
 	fill: #222;
 }
 
@@ -840,9 +850,11 @@ ul.nav>li>a.active {
 	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 }
-.swiper-container .swiper-slide img{
+
+.swiper-container .swiper-slide img {
 	border-radius: 20px;
 }
+
 .swiper-container .swiper-slide-next,
 .swiper-container .swiper-slide-prev {
 	transform: scale(.75);
@@ -947,8 +959,9 @@ ul.nav>li>a.active {
 	transition: all .3s ease-in-out;
 	z-index: 99;
 }
+
 .swiper-container .swiper-next svg,
-.swiper-container .swiper-prev svg{
+.swiper-container .swiper-prev svg {
 	fill: white;
 }
 
@@ -1028,7 +1041,7 @@ ul.nav>li>a.active {
 	-o-transition: all .2s ease;
 }
 
-.play-button span svg{
+.play-button span svg {
 	position: absolute;
 	width: 30px;
 	height: 30px;
@@ -1489,10 +1502,11 @@ ul.nav>li>a.active {
 	padding: 70px 0;
 	border-top: 1px solid rgb(234 234 234 / 19%);
 }
+
 @media (max-width: 768px) {
-  .subscribe-section {
-    padding: 30px 0;
-  }
+	.subscribe-section {
+		padding: 30px 0;
+	}
 }
 
 .subscribe-wrapper {}
@@ -1525,8 +1539,8 @@ ul.nav>li>a.active {
 }
 
 .submit {
-	background: rgb(236,182,169);
-	background: linear-gradient(180deg, rgba(236,182,169,1) 0%, rgba(193,139,123,1) 100%);
+	background: rgb(236, 182, 169);
+	background: linear-gradient(180deg, rgba(236, 182, 169, 1) 0%, rgba(193, 139, 123, 1) 100%);
 	color: #fff;
 	font-size: 14px;
 	line-height: 45px;
@@ -1534,14 +1548,15 @@ ul.nav>li>a.active {
 	padding: 0 25px;
 	font-weight: 500;
 	/* width: 28%; */
-	margin-left: 2%;
 	text-transform: uppercase;
 	border-radius: 5px;
 }
 
 .submit:hover {
-	box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .25)
+	box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .25);
+	color: #ffffff;
 }
+
 .social-link {
 	text-align: center
 }
@@ -1602,10 +1617,12 @@ ul.nav>li>a.active {
 	box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .25);
 	color: #fff
 }
-.mobile-screen{
+
+.mobile-screen {
 	/* position: relative; */
 }
-.mobile-screen img{
+
+.mobile-screen img {
 	margin: 0 auto;
 	position: absolute;
 	top: -10px;
@@ -1615,4 +1632,123 @@ ul.nav>li>a.active {
 	width: 230px;
 	padding: 55px 0;
 	z-index: 100;
+}
+
+@media (max-width: 767px) {
+	.hero-content h1 {
+		font-size: 28px;
+		line-height: 40px;
+	}
+
+	.hero-content p {
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	.hero_btn {
+		line-height: 35px;
+		padding: 0 15px;
+	}
+
+	.navbar-brand h4 {
+		font-size: 20px;
+	}
+
+	.navbar-fixed-top.header-section {
+		height: 50px;
+	}
+
+	.slicknav_btn {
+		margin: -48px 5px 19px;
+	}
+
+	.nav-link .btn {
+		border-color: black;
+		color: black;
+	}
+}
+
+.radiotextsty {
+  font-size: 14px;
+}
+
+.customradio {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.customradio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border-radius: 50%;
+  border:1px solid #BEBEBE;
+}
+
+/* On mouse-over, add a grey background color */
+.customradio:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the radio button is checked, add a blue background */
+.customradio input:checked ~ .checkmark {
+  background-color: white;
+  border:1px solid #BEBEBE;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.customradio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.customradio .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffbdbc;
+}
+
+/* Custom Radio Button End*/
+
+.survey{
+	color: white;
+	font-family: helveticaneue-thin;
+	list-style-position: inside;
+}
+.survey-item{
+	margin-bottom: 30px;
+}
+.survey-item > label:first-child{
+	font-weight: 600;
+	padding-left: 10px;
+	position: relative;
 }

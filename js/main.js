@@ -79,11 +79,14 @@
     smoothScroll.init({
         offset: 60
     });
+    
     var vbSelector = $('.img_popup');
     vbSelector.venobox({
-        numeratio: true,
-        infinigall: true
+        numeratio: false,
+        infinigall: false,
+        autoplay: true
     });
+    
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > 100) {
             $('#scroll-to-top').fadeIn();
@@ -91,6 +94,7 @@
             $('#scroll-to-top').fadeOut();
         }
     });
+    
     var wow = new WOW({
         mobile: false,
         offset: 150
