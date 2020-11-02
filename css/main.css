@@ -85,7 +85,6 @@ h4 {
 	/* font-weight: 700; */
 	line-height: 1.6;
 	color: #fff;
-	text-transform: uppercase;
 }
 
 h3 {
@@ -713,10 +712,19 @@ ul.nav>li>a.active {
 .feature-box h4 {
 	margin: 0 0 5px 50px;
 	font-weight: 500;
+	background: rgb(149, 86, 69);
+	background: linear-gradient(0deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .feature-left .feature-box h4 {
 	margin: 0 50px 5px 0;
+
+	background: rgb(149, 86, 69);
+	background: linear-gradient(180deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	/* font-weight: 500; */
 }
 
@@ -731,7 +739,7 @@ ul.nav>li>a.active {
 }
 
 .feature-left .feature-box .feature-content {
-	padding: 5px 50px 25px 20px;
+	padding: 5px 50px 25px 0px;
 	/* border-right: 0 solid transparent; */
 	/* border-left: 1px solid rgb(238 238 238 / 45%); */
 }
@@ -809,8 +817,9 @@ ul.nav>li>a.active {
 .feature-box:hover .feature-icon {
 	background-color: #d9a691;
 	border-color: #d9a691;
-	color: #222;
+	color: #000;
 	font-weight: bold;
+	background: linear-gradient(160deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
 }
 
 .feature-box:hover .feature-icon svg {
