@@ -7,7 +7,7 @@
     var header = $("#header"),
       brand = $("#navbrand"),
       yOffset = 0,
-      triggerPoint = 100;
+      triggerPoint = 200;
     $(window).on('scroll', function () {
       yOffset = $(window).scrollTop();
       if (yOffset >= triggerPoint) {
@@ -103,14 +103,7 @@
     offset: 150
   });
   wow.init();
-  if ($('.subscribe_form').length > 0) {
-    $('.subscribe_form').ajaxChimp({
-      language: 'es',
-      callback: mailchimpCallback,
-      url: "//alexatheme.us14.list-manage.com/subscribe/post?u=48e55a88ece7641124b31a029&amp;id=361ec5b369"
-    });
-  }
-
+  
   function mailchimpCallback(resp) {
     if (resp.result === 'success') {
       $('#subscribe-result').addClass('subs-result');

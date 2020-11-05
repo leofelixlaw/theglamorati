@@ -400,8 +400,8 @@ button {
 
 .navbar-fixed-top.header-section {
 	background-color: #1e1e1e;
-	box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .05);
-	height: 70px;
+	box-shadow: 0 3px 7px 0 rgb(255 255 255 / 20%);
+	height: 50px;
 	border-bottom: 0;
 	padding: 0;
 }
@@ -481,8 +481,9 @@ ul.nav>li>a {
 	vertical-align: middle;
 	padding: 0 10px;
 	text-transform: uppercase;
-	line-height: 70px;
+	line-height: 50px;
 	z-index: 1;
+	font-family: 'caviar_dreamsbold';
 }
 
 ul.nav>li>a:hover,
@@ -720,9 +721,8 @@ ul.nav>li>a.active {
 
 .feature-left .feature-box h4 {
 	margin: 0 50px 5px 0;
-
 	background: rgb(149, 86, 69);
-	background: linear-gradient(180deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
+	background: linear-gradient(10deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	/* font-weight: 500; */
@@ -739,7 +739,7 @@ ul.nav>li>a.active {
 }
 
 .feature-left .feature-box .feature-content {
-	padding: 5px 50px 25px 0px;
+	padding: 5px 50px 25px 20px;
 	/* border-right: 0 solid transparent; */
 	/* border-left: 1px solid rgb(238 238 238 / 45%); */
 }
@@ -791,15 +791,18 @@ ul.nav>li>a.active {
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
-	border-radius: 50%;
-	background: #ffffff;
+	/* border-radius: 50%; */
+	background: transparent;
 	text-align: center;
 	font-size: 22px;
 	color: #000000;
 	position: absolute;
-	top: -40px;
+	top: -29px;
 	left: -20px;
 	transition: all .3s ease 0s;
+	border: 2px solid;
+	border-image: linear-gradient(156deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
+	border-image-slice: 1;
 }
 
 .feature-left .feature-box .feature-icon {
@@ -811,7 +814,7 @@ ul.nav>li>a.active {
 	height: 28px;
 	top: 5px;
 	position: relative;
-	fill: #000000;
+	fill: #ffffff;
 }
 
 .feature-box:hover .feature-icon {
@@ -1589,16 +1592,15 @@ ul.nav>li>a.active {
 	background: linear-gradient(180deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
 	color: #000;
 	font-size: 14px;
-	line-height: 45px;
+	line-height: 36px;
 	display: inline-block;
 	padding: 0 25px;
 	font-weight: 500;
 	text-transform: uppercase;
 	border-radius: 5px;
-	-webkit-transition: all ease-in-out 0.3s;
-	-moz-transition: all ease-in-out 0.3s;
-	-o-transition: all ease-in-out 0.3s;
-	transition: all ease-in-out 0.3s;
+	-webkit-transition: all .5s .5s ease;
+	-moz-transition: all .5s .5s ease;
+	transition: all .5s .2s ease;
 }
 
 .submit:hover {
@@ -1634,14 +1636,12 @@ ul.nav>li>a.active {
 .footer-section {
 	background-color: #000;
 	display: block;
-	padding: 20px 0;
+	padding: 10px 0;
 	border-top: 1px solid rgb(234 234 234 / 19%);
+	font-size: 12px;
 }
 
-.footer-section p.copyright {
-	margin: 0;
-	color: #444;
-	text-transform: uppercase;
+.footer-section p {
 	font-size: 12px
 }
 
@@ -1750,18 +1750,20 @@ ul.nav>li>a.active {
 	width: 18px;
 	background-color: white;
 	border-radius: 50%;
-	border: 1px solid #BEBEBE;
+	border: none;
+	-webkit-transition: all .5s .5s ease;
+	-moz-transition: all .5s .5s ease;
+	transition: all .5s .2s ease;
 }
 
 /* On mouse-over, add a grey background color */
 .customradio:hover input~.checkmark {
-	background-color: transparent;
+	background-color: #ffd6cb;
 }
 
 /* When the radio button is checked, add a blue background */
 .customradio input:checked~.checkmark {
 	background-color: white;
-	border: 1px solid #BEBEBE;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -1778,20 +1780,22 @@ ul.nav>li>a.active {
 
 /* Style the indicator (dot/circle) */
 .customradio .checkmark:after {
-	top: 2px;
-	left: 2px;
-	width: 12px;
-	height: 12px;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
 	border-radius: 50%;
-	background: #ffbdbc;
+	background: rgb(149,86,69);
+	background: radial-gradient(circle, rgba(149,86,69,1) 0%, rgba(173,111,96,1) 19%, rgba(225,172,158,1) 40%, rgba(245,228,213,1) 90%, rgba(219,166,152,1) 97%, rgba(173,111,96,1) 100%);
 }
 
 /* Custom Radio Button End*/
 
 .survey {
 	color: white;
-	font-family: 'caviar_dreamsbold';
+	font-family: 'caviar_dreamsregular';
 	list-style-position: inside;
+	text-align: left;
 }
 
 .survey-item {
@@ -1848,7 +1852,19 @@ button,
 .submit {
 	font-family: 'caviar_dreamsbold';
 }
-
+.navbar-brand{
+	padding: 0;
+}
+.logo{
+	border-top: 2px solid #ffc8b1;
+	border-bottom: 2px solid #ffc8b1;
+	font-family: 'caviar_dreamsregular';
+	font-size: 1.5rem;
+	border-image: linear-gradient(156deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
+	border-image-slice: 1;
+	display: inline-block;
+	line-height: 30px;
+}
 .sub-title {
 	border-top: 3px solid #ffc8b1;
 	border-bottom: 3px solid #ffc8b1;
@@ -1857,6 +1873,7 @@ button,
 	border-image: linear-gradient(156deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
 	border-image-slice: 1;
 	display: inline-block;
+	line-height: 2.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1864,6 +1881,8 @@ button,
 		font-size: 5rem;
 		padding: 10px 0;
 		border-width: 5px;
+		padding-bottom: 20px;
+		line-height: 3.5rem;
 	}
 
 	.sub-title.min {
@@ -1884,13 +1903,16 @@ main {
 }
 
 footer {
-	height: 60px;
+	height: 45px;
 	margin-top: 0px;
 }
 
 .mat-text {
 	background: rgb(149, 86, 69);
-	background: linear-gradient(180deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
+	background: linear-gradient(120deg, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 11%, rgba(225, 172, 158, 1) 36%, rgba(245, 228, 213, 1) 65%, rgba(219, 166, 152, 1) 83%, rgba(173, 111, 96, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+.mat-text-shadow{
+	text-shadow: 3px 1px 1px rgb(255 255 255 / 28%);
 }
