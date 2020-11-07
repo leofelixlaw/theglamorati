@@ -30,6 +30,7 @@
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
@@ -47,7 +48,7 @@
   <header id="header" class="header-section">
     <nav class="container">
       <nav class="navbar">
-        <a id="navbrand"  href="index.html" class="navbar-brand invisible">
+        <a id="navbrand" href="index.html" class="navbar-brand invisible">
           <!-- <img src="img/logo.png" alt="Astra"/> -->
           <h4 class="logo mb-0">the glamorati</h4>
         </a>
@@ -55,7 +56,7 @@
           <div id="navmenu" class="mainmenu">
             <ul class="nav">
               <li>
-                
+                <a data-scroll class="nav-link" href="index.html">Home</a>
               </li>
               <li>
                 <a data-scroll class="nav-link" href="index.html#features">Features</a>
@@ -76,22 +77,23 @@
     <section class="padding pt-5">
       <div class="container align-center">
         <div class="row justify-content-md-center">
-          <div class="col-sm-8">
+          <div class="col-sm-10">
             <div class="section-heading align-center mb-40 wow fadeInRight" data-wow-delay="0ms"
               data-wow-duration="800ms">
               <h2 class="sub-title mt-4 mb-4"><a href="index.html" class="text-white">the glamorati</a></h2>
               <h3>Thank you so much for joining the
-                Glamorati movement.<br /> We’re working hard for you.</h3>
+                Glamorati movement!<br /> We’re working hard for you.</h3>
+                <br/>
               <h1 class="mat-text mat-text-shadow">$10 Sephora Gift Card Giveaway</h1>
-              <p>Have 10 minutes to spare? Complete a few easy questions below and we’ll send you a free $10 Sephora gift card to the email address you provided. Its easy as that</p>
+              <p>Have 10 minutes to spare? Complete a few easy questions below and we’ll send you a free $10 Sephora
+                gift card to the email address you provided. It's as easy as that.</p>
             </div>
           </div>
         </div>
 
         <div class="row justify-content-md-center mt-4 mb-4">
-          <div class="col col-md-8">
-            <div class="section-heading align-center wow fadeInRight" data-wow-delay="0ms"
-              data-wow-duration="800ms">
+          <div class="col">
+            <div class="section-heading align-center wow fadeInRight" data-wow-delay="0ms" data-wow-duration="800ms">
               <!-- <p>Thank you for your support! We can’t wait to
                 share this exciting journey with you. You’ll be the first to know
                 when we go live.
@@ -99,127 +101,53 @@
             </div>
 
             <div class="survey">
-              <form>
-                <h4 class="mb-4">Survey Quistion and Answer</h4>
+              <form method="post" autocomplete="off" name="google-sheet">
+                <h4 class="mb-4">Beauty Questionnaire</h4>
                 <ol>
                   <li class="survey-item form-group">
-                    <label class="labeltext">Lorem Ipsum is simply dummy text of the printing ?</label><br>
+                    <label class="labeltext">Please rank the following considerations in order of importance when
+                      choosing which beauty
+                      bloggers/creators to follow, with one being the <b>most</b> important.</label><br>
                     <div class="form-check-inline">
-                      <label class="customradio"><span class="radiotextsty">typesetting industry</span>
-                        <input type="radio" checked="checked" name="radio1">
+                      <label class="customradio"><span class="radiotextsty">They look like me</span>
+                        <input type="radio" checked="checked" name="Survey1" value="They look like me">
                         <span class="checkmark"></span>
                       </label>        
-                      <label class="customradio"><span class="radiotextsty">when an unknown</span>
-                        <input type="radio" name="radio1">
+                      <label class="customradio"><span class="radiotextsty">They are entertaining</span>
+                        <input type="radio" name="Survey1" value="They are entertaining">
+                        <span class="checkmark"></span>
+                      </label>       
+                      <label class="customradio"><span class="radiotextsty">Their content is informative</span>
+                        <input type="radio" name="Survey1" value="Their content is informative">
+                        <span class="checkmark"></span>
+                      </label>       
+                      <label class="customradio"><span class="radiotextsty">I can relate to them personally</span>
+                        <input type="radio" name="Survey1" value="I can relate to them personally">
                         <span class="checkmark"></span>
                       </label>
                     </div>
                   </li>
                   <li class="survey-item form-group">
-                    <label class="labeltext">Lorem Ipsum is simply dummy text of thpsum is simply dummy text of the
-                      printing psum?</label><br>
+                    <label class="labeltext">How personal is your interaction between you and beauty creators you
+                      follow?</label><br>
                     <div class="form-check-inline">
-                      <label class="customradio"><span class="radiotextsty">typesetting industry</span>
-                        <input type="radio" checked="checked" name="radio2">
+                      <label class="customradio"><span class="radiotextsty">Very personal</span>
+                        <input type="radio" checked="checked" name="Survey2" value="Very personal">
                         <span class="checkmark"></span>
                       </label>        
-                      <label class="customradio"><span class="radiotextsty">when an unknown</span>
-                        <input type="radio" name="radio2">
+                      <label class="customradio"><span class="radiotextsty">Somewhat Personal </span>
+                        <input type="radio" name="Survey2" value="Somewhat Personal">
                         <span class="checkmark"></span>
-                      </label>
+                      </label>       
+                      <label class="customradio"><span class="radiotextsty">Not personal</span>
+                        <input type="radio" name="Survey2" value="Not personal">
+                        <span class="checkmark"></span>
+                      </label>   
                     </div>
                   </li>
-                  <li class="survey-item form-group">
-                    <label class="labeltext">Lorem Ipsum is simply dummy mmy text of thpsum is simply dummy t text of
-                      the
-                      printing ?</label><br>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                  </li>
-
-                  <li class="survey-item form-group">
-                    <label class="labeltext">Lorem Ipsum is simply dummy text of the printing ?</label><br>
-                    <div class="form-check-inline">
-                      <label class="customradio"><span class="radiotextsty">typesetting industry</span>
-                        <input type="radio" checked="checked" name="radio1">
-                        <span class="checkmark"></span>
-                      </label>        
-                      <label class="customradio"><span class="radiotextsty">when an unknown</span>
-                        <input type="radio" name="radio1">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                  </li>
-                  <li class="survey-item form-group">
-                    <label class="labeltext">Lorem Ipsum is simply dummy text of thpsum is simply dummy text of the
-                      printing psum?</label><br>
-                    <div class="form-check-inline">
-                      <label class="customradio"><span class="radiotextsty">typesetting industry</span>
-                        <input type="radio" checked="checked" name="radio2">
-                        <span class="checkmark"></span>
-                      </label>        
-                      <label class="customradio"><span class="radiotextsty">when an unknown</span>
-                        <input type="radio" name="radio2">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                  </li>
-                  <li class="survey-item form-group">
-                    <label class="labeltext">Lorem Ipsum is simply dummy mmy text of thpsum is simply dummy t text of
-                      the
-                      printing ?</label><br>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                  </li>
-
-                  <li class="survey-item form-group">
-                    <label class="labeltext">Lorem Ipsum is simply dummy text of the printing ?</label><br>
-                    <div class="form-check-inline">
-                      <label class="customradio"><span class="radiotextsty">typesetting industry</span>
-                        <input type="radio" checked="checked" name="radio1">
-                        <span class="checkmark"></span>
-                      </label>        
-                      <label class="customradio"><span class="radiotextsty">when an unknown</span>
-                        <input type="radio" name="radio1">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                  </li>
-                  <li class="survey-item form-group">
-                    <label class="labeltext">Lorem Ipsum is simply dummy text of thpsum is simply dummy text of the
-                      printing psum?</label><br>
-                    <div class="form-check-inline">
-                      <label class="customradio"><span class="radiotextsty">typesetting industry</span>
-                        <input type="radio" checked="checked" name="radio2">
-                        <span class="checkmark"></span>
-                      </label>        
-                      <label class="customradio"><span class="radiotextsty">when an unknown</span>
-                        <input type="radio" name="radio2">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                  </li>
-                  <li class="survey-item form-group">
-                    <label class="labeltext">Lorem Ipsum is simply dummy text of thpsum is simply dummy text of the
-                      printing psum?</label><br>
-                    <div class="form-check-inline">
-                      <label class="customradio"><span class="radiotextsty">typesetting industry</span>
-                        <input type="radio" checked="checked" name="radio2">
-                        <span class="checkmark"></span>
-                      </label>        
-                      <label class="customradio"><span class="radiotextsty">when an unknown</span>
-                        <input type="radio" name="radio2">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                  </li>
-                  <li class="survey-item form-group">
-                    <label class="labeltext">Lorem Ipsum is simply dummy mmy text of thpsum is simply dummy t text of
-                      the
-                      printing ?</label><br>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                  </li>
-                </ol>
-                <!-- <button class="btn btn-primary submit border-0">Submit</button> -->
-                <a class="btn btn-primary submit border-0 mb-5" href="success.html">Submit</a>
+                  <input type="hidden" name="Email">
+                  <input type="hidden" name="Comments">
+                  <input type="submit" name="submit" class="submit" value="Submit" />
               </form>
             </div>
           </div>
@@ -251,6 +179,36 @@
   <script src="js/vendor/tilt.jquery.min.js"></script>
   <script src="js/vendor/jquery.slicknav.min.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      var email = sessionStorage.getItem('Email')
+      var comments = sessionStorage.getItem('Comments')
+      if (email && comments) {
+        $('[name="Email"]').val(email)
+        $('[name="Comments"]').val(comments)
+      } else{
+        window.location = window.location.origin + '/join.html'
+      }
+    });
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxadcSi6fii-fBw4vUz2OGP9o1Feasu6fut9ligaO7gMn4rLdY/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => {
+          window.location = window.location.origin + '/success.html'
+          event.preventDefault();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
 </body>
 
 </html>

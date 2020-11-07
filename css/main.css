@@ -708,7 +708,6 @@ ul.nav>li>a.active {
 	border-top: 1px solid rgb(234 234 234 / 19%);
 }
 
-.feature-box {}
 
 .feature-box h4 {
 	margin: 0 0 5px 50px;
@@ -784,6 +783,11 @@ ul.nav>li>a.active {
 	.feature-box p {
 		font-size: 18px;
 		line-height: 30px;
+	}
+}
+@media (max-width: 768px) {
+	.feature-box.mb-40 {
+		margin-bottom: 10px;
 	}
 }
 
@@ -1061,6 +1065,7 @@ ul.nav>li>a.active {
 	text-align: center;
 	display: block;
 	margin: 0 auto;
+	cursor: pointer;
 	transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-webkit-transition: all .3s ease;
@@ -1785,8 +1790,8 @@ ul.nav>li>a.active {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
-	background: rgb(149,86,69);
-	background: radial-gradient(circle, rgba(149,86,69,1) 0%, rgba(173,111,96,1) 19%, rgba(225,172,158,1) 40%, rgba(245,228,213,1) 90%, rgba(219,166,152,1) 97%, rgba(173,111,96,1) 100%);
+	background: rgb(149, 86, 69);
+	background: radial-gradient(circle, rgba(149, 86, 69, 1) 0%, rgba(173, 111, 96, 1) 19%, rgba(225, 172, 158, 1) 40%, rgba(245, 228, 213, 1) 90%, rgba(219, 166, 152, 1) 97%, rgba(173, 111, 96, 1) 100%);
 }
 
 /* Custom Radio Button End*/
@@ -1852,10 +1857,12 @@ button,
 .submit {
 	font-family: 'caviar_dreamsbold';
 }
-.navbar-brand{
+
+.navbar-brand {
 	padding: 0;
 }
-.logo{
+
+.logo {
 	border-top: 2px solid #ffc8b1;
 	border-bottom: 2px solid #ffc8b1;
 	font-family: 'caviar_dreamsregular';
@@ -1865,6 +1872,7 @@ button,
 	display: inline-block;
 	line-height: 30px;
 }
+
 .sub-title {
 	border-top: 3px solid #ffc8b1;
 	border-bottom: 3px solid #ffc8b1;
@@ -1913,6 +1921,46 @@ footer {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.mat-text-shadow{
+
+.mat-text-shadow {
 	text-shadow: 3px 1px 1px rgb(255 255 255 / 28%);
+}
+
+/* #myModal .modal-dialog {
+	-webkit-transform: translate(0,-50%);
+	-o-transform: translate(0,-50%);
+	transform: translate(0,-50%);
+	top: 50%;
+	margin: 0 auto;
+} */
+
+.modal-dialog {
+	max-width: 800px;
+	margin: 30px auto;
+}
+
+.modal-content {
+	background-color: #333333;
+}
+
+.modal-body {
+	position: relative;
+	padding: 0px;
+}
+
+.close {
+	position: absolute;
+	right: -30px;
+	top: 0;
+	z-index: 999;
+	font-size: 2rem;
+	font-weight: normal;
+	color: #fff;
+	opacity: 1;
+}
+.share-sm{
+	padding: 20px;;
+}
+.text-muted {
+	color: #d0d0d0 !important;
 }

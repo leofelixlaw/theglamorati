@@ -83,8 +83,8 @@
     offset: 60
   });
 
-  var vbSelector = $('.img_popup');
-  vbSelector.venobox({
+  $('.img_popup').venobox({
+    share: ['facebook', 'twitter', 'download', 'linkedin'],
     numeratio: false,
     infinigall: false,
     autoplay: true

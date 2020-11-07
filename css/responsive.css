@@ -110,11 +110,12 @@
         padding-top: 45px;
     }
     .feature-left .feature-box h4 {
-        margin: 0 0 15px 70px;
+        margin: 0 0 5px 70px;
         text-align: left;
+        font-size: 16px;
     }
     .feature-left .feature-box .feature-content {
-        padding: 5px 20px 25px 50px;
+        padding: 5px 20px 5px 50px;
         /* border-right: 1px solid rgb(238 238 238 / 45%); */
         /* border-left: 0px solid transparent; */
         text-align: left;
@@ -135,10 +136,10 @@
         text-align: left;
     }
     .feature-box .feature-content {
-        margin: 0 0 15px 20px;
+        margin: 0 0 5px 20px;
     }
     .feature-box h4{
-        margin: 0 0 15px 70px;
+        margin: 0 0 5px 70px;
     }
 }
 
