@@ -1593,6 +1593,7 @@ ul.nav>li>a.active {
 	-webkit-transition: all .5s .5s ease;
 	-moz-transition: all .5s .5s ease;
 	transition: all .5s .2s ease;
+	cursor: pointer;
 }
 
 .submit:hover {
