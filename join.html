@@ -163,7 +163,9 @@
             console.log(field.name)
             sessionStorage.setItem(field.name, field.value);
           });
-          window.location = window.location.origin + '/next.html'
+          const url = window.location.href;
+          const shortUrl = url.substring(0,url.lastIndexOf("/"));
+          window.location = shortUrl + '/next.html'
         })
         .catch(error => console.error('Error!', error.message))
     })

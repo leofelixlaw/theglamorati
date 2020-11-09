@@ -1235,7 +1235,10 @@
           body: new FormData(form)
         })
         .then(response => {
-          window.location = window.location.origin + '/success.html'
+
+          const url = window.location.href;
+          const shortUrl = url.substring(0,url.lastIndexOf("/"));
+          window.location = shortUrl + '/success.html'
           event.preventDefault();
         })
         .catch(error => console.error('Error!', error.message))
