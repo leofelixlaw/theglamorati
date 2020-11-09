@@ -1809,8 +1809,8 @@ ul.nav>li>a.active {
 
 .survey-item>label:first-child {
 	font-weight: 600;
-	padding-left: 10px;
 	position: relative;
+	display: block;
 }
 
 .btn-outline-secondary {
@@ -1963,4 +1963,37 @@ footer {
 }
 .text-muted {
 	color: #d0d0d0 !important;
+}
+.rrssb-buttons li{
+	width: 20% !important;
+}
+ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  position: absolute;
+  --size: 27px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+.form-check-inline {
+	-webkit-box-align: flex-start;
+	-ms-flex-align: flex-start;
+	align-items: flex-start;
 }
