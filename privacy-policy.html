@@ -15,10 +15,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="the glamorati is a Survey page." />
+  <meta name="description" content="Privacy Policy" />
   <meta name="author" content="the glamorati" />
   <meta name="theme-color" content="#000000" />
-  <title>The Glamorati | Join</title>
+  <title>The Glamorati | Privacy Policy</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
@@ -41,13 +41,6 @@
 </head>
 
 <body data-spy="scroll" data-target="#navmenu" data-offset="70" class="d-flex flex-column h-100">
-  <!--[if lt IE 8]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience.
-      </p>
-    <![endif]-->
   
   <header id="header" class="header-section">
     <nav class="container">
@@ -78,56 +71,40 @@
     </nav>
   </header>
   <main>
-    <section class="padding mt-5 pt-5">
+    <section class="padding pt-5">
       <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col col-md-8">
-
-            <div class="section-heading align-center mb-40 wow fadeInRight" data-wow-delay="0ms"
-              data-wow-duration="800ms">
-              <h2 class="sub-title mt-4 mb-4"><a href="index.html" class="text-white">the glamorati</a></h2>
-              <p>
-                <h4>Thank you for your support!</h5>You’ll be the first to know
-                  when we go live.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-md-center mt-1 mb-4">
-          <div class="col col-md-8">
-            <div class="survey">
-              <form method="post" autocomplete="off" name="google-sheet">
-                <div class="form-group">
-                  <label for="">Enter email address</label>
-                  <input type="email" class="form-control border-0 form-control-lg w-50" name="Email"
-                    required="required">
-                  <small id="" class="form-text text-muted">Privacy is important to us. We’ll never…ever,
-                    share your email details with anyone else</small>
-                </div>
-
-                <h3 class="mb-4">Leave your comments</h3>
-                <textarea name="Comments" class="form-control mb-4" id="" rows="4"
-                  placeholder="If you’d like, drop us a line and tell us what you think"></textarea>
-                <!-- <button class="btn btn-primary submit border-0">Submit</button> -->
-                <input type="submit" name="submit" class="submit" value="Submit" />
-                <p>Complete our Beauty Questionnaire and receive a <strong>$10</strong> Sephora Gift Card.</p>
-
-              </form>
-            </div>
-          </div>
-        </div>
+        <a href="https://www.iubenda.com/privacy-policy/54238707" class="iubenda-white iubenda-embed iub-body-embed"
+          title="Privacy Policy">Privacy Policy</a>
+        <script type="text/javascript">
+          (function (w, d) {
+            var loader = function () {
+              var s = d.createElement("script"),
+                tag = d.getElementsByTagName("script")[0];
+              s.src = "https://cdn.iubenda.com/iubenda.js";
+              tag.parentNode.insertBefore(s, tag);
+            };
+            if (w.addEventListener) {
+              w.addEventListener("load", loader, false);
+            } else if (w.attachEvent) {
+              w.attachEvent("onload", loader);
+            } else {
+              w.onload = loader;
+            }
+          })(window, document);
+        </script>
       </div>
     </section>
   </main>
   <footer class="footer-section mt-auto">
     <div class="container">
       <div class="row">
-          <div class="col-sm-6">
-              <p class="mb-0">&copy; 2020 The Glamorati. All rights reserved.</p>
-          </div>
-          <div class="col-sm-6 text-right-md">
-              <p class="mb-0"><a href="./privacy-policy.html">Privacy Policy</a>&nbsp;|&nbsp;<a href="./tandc.html">Terms and Conditions</a></p>
-          </div>
+        <div class="col-sm-6">
+          <p class="mb-0">&copy; 2020 The Glamorati. All rights reserved.</p>
+        </div>
+        <div class="col-sm-6 text-right-md">
+          <p class="mb-0"><a href="./privacy-policy.html">Privacy Policy</a>&nbsp;|&nbsp;<a href="./tandc.html">Terms
+              and Conditions</a></p>
+        </div>
       </div>
     </div>
   </footer>
@@ -150,29 +127,6 @@
   <script src="js/vendor/tilt.jquery.min.js"></script>
   <script src="js/vendor/jquery.slicknav.min.js"></script>
   <script src="js/main.js"></script>
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKF5gYfqMxG7_VRB3us9dS1EemkI3akGKgG2G-Sjyc-rzH1u0/exec'
-    const form = document.forms['google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, {
-          method: 'POST',
-          body: new FormData(form)
-        })
-        .then(response => {
-          $.each($(form).serializeArray(), function (i, field) {
-            console.log(field.name)
-            sessionStorage.setItem(field.name, field.value);
-          });
-          const url = window.location.href;
-          const shortUrl = url.substring(0,url.lastIndexOf("/"));
-          window.location = shortUrl + '/next.html'
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 
 </body>
 

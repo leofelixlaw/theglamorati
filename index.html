@@ -18,7 +18,7 @@
   <meta name="description" content="the glamorati is a app landing page." />
   <meta name="author" content="the glamorati" />
   <meta name="theme-color" content="#000000" />
-  <title>the glamorati | App Landing Page</title>
+  <title>The Glamorati | App Landing Page</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
@@ -44,7 +44,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#navmenu" data-offset="70">
+<body data-spy="scroll" data-target="#navmenu" data-offset="70" class="d-flex flex-column h-100">
   <!--[if lt IE 8]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -52,11 +52,7 @@
         your experience.
       </p>
     <![endif]-->
-  <div id="preloader">
-    <div class="loader">
-      <img src="img/preloader.svg" width="60" alt="" />
-    </div>
-  </div>
+  
   <header id="header" class="header-section">
     <div class="container">
       <nav class="navbar">
@@ -104,7 +100,7 @@
               <div class="video-content">
                 <!-- <a class="play-button img_popup venobox" data-gall="gall-video" data-autoplay="true" data-vbtype="video"
                   href="https://www.youtube.com/watch?v=NbVAgoJUb04"> -->
-                <a class="play-button video-btn" data-toggle="modal" 
+                <a class="play-button video-btn" data-toggle="modal"
                   data-src="https://www.youtube.com/embed/nCqw_4asDHI" data-target="#myModal">
                   <span>
                     <svg width="1em" height="1em" viewBox="0 0 20 20" class="bi bi-caret-right-fill" fill="currentColor"
@@ -232,7 +228,7 @@
               <li class="feature-box mb-40 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="800ms">
                 <h4>Sharing is Caring</h4>
                 <div class="feature-content">
-                  <p>Post your new look and share <br />it with friends</p> <br class="d-none d-sm-block" /> 
+                  <p>Post your new look and share <br />it with friends</p> <br class="d-none d-sm-block" />
                   <div class="feature-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                       id="Capa_1" x="0px" y="0px" viewBox="0 0 419.2 419.2"
@@ -582,14 +578,20 @@
           </div>
           <div id="fb-root"></div>
           <div class="fb-comments" data-href="Your Blog URL" data-width="450" data-numposts="5"></div>
+        </div>
       </div>
     </div>
   </div>
-
-
-  <footer class="footer-section">
+  <footer class="footer-section mt-auto">
     <div class="container">
-      <p class="text-center mb-0">&copy; 2020 the glamorati. All rights reserved.</p>
+      <div class="row">
+          <div class="col-sm-6">
+              <p class="mb-0">&copy; 2020 The Glamorati. All rights reserved.</p>
+          </div>
+          <div class="col-sm-6 text-right-md">
+              <p class="mb-0"><a href="./privacy-policy.html">Privacy Policy</a>&nbsp;|&nbsp;<a href="./tandc.html">Terms and Conditions</a></p>
+          </div>
+      </div>
     </div>
   </footer>
   <a data-scroll href="#header" id="scroll-to-top">
@@ -614,13 +616,16 @@
   <script src="js/vendor/jquery.slicknav.min.js"></script>
   <script src="js/main.js"></script>
 
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=id_example";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  <script>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=id_example";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function () {
