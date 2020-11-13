@@ -1220,7 +1220,7 @@
     $(document).ready(function () {
       var email = sessionStorage.getItem('Email')
       var comments = sessionStorage.getItem('Comments')
-      if (email && comments) {
+      if (email) {
         $('[name="Email"]').val(email)
         $('[name="Comments"]').val(comments)
       } else {
